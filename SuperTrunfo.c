@@ -46,7 +46,7 @@ int main(){
 
 
 
-    printf("____Criação de carta numero 2____\n");
+    printf("\n____Criação de carta numero 2____\n");
 
       printf("\n Digite a Letra do Estado da carta (de 'A' a 'H'): \n");
     scanf(" %c", &estado2);
@@ -73,12 +73,12 @@ int main(){
     PIBperCapita2 = pib2 / populacao2;
    
 
- 
+    printf("\n");
     printf("\n____Carta criada com Sucesso!____\n");
         
 
 
-    Sleep(2000);
+    Sleep(2000); // delay de 2 segundos para exibir a carta
 
     printf("\n____Carta 1____\n");
     printf("Estado: %c \n", estado1);
@@ -91,7 +91,7 @@ int main(){
     printf("Densidade populacional: %.2f Hab/km² \n", DensidadePopulacional1);
     printf("PIB per capita: %.2f reais \n", PIBperCapita1);
 
-    Sleep(5000);
+    Sleep(5000); // delay de 5 segundos para exibir a proxima carta
 
     printf("\n____Carta 2____\n");
     printf("Estado: %c \n", estado2);
