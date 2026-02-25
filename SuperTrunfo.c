@@ -83,4 +83,5 @@ int main(){
     printf("Área da cidade: %.2f km²\n", area2);
     printf("PIB da cidade: %.2f bilhoes \n", pib2);
     printf("Quantidade de pontos turisticos da cidade: %d \n", QuantPontosTuristicos2);
+    printf("\n oi \n");
 }
