@@ -104,7 +104,6 @@ int main(){
     printf("Densidade populacional: %.2f Hab/km² \n", DensidadePopulacional2);
     printf("PIB per capita: %.2f reais \n", PIBperCapita2);
 
-    printf("Tudo meu geovane");
+    Sleep(20000); // delay 20 segundos para finalizar em executaveis
     
-
 }
