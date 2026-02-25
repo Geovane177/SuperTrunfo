@@ -103,8 +103,6 @@ int main(){
     printf("Quantidade de pontos turisticos da cidade: %d \n", QuantPontosTuristicos2);
     printf("Densidade populacional: %.2f Hab/km² \n", DensidadePopulacional2);
     printf("PIB per capita: %.2f reais \n", PIBperCapita2);
-
-    printf("Tudo meu geovane");
     
 
 }
