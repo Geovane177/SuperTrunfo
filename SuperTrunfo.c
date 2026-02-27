@@ -109,29 +109,155 @@ int main(){
     printf("PIB per capita: %.2f reais \n", PIBperCapita2);
     printf("Super poder da carta: %.2f \n", SuperPoder2);
    
-
-    printf("\n____Comparação entre as cartas____\n");
-
-   resultado = populacao1 > populacao2;
-   printf("População da carta 1 é maior que a carta 2? %d \n", resultado);
+    Sleep(5000); // delay de 5 segundos para exibir a comparação entre as cartas
    
-   resultado = area1 > area2;
-   printf("area da carta 1 é maior que a carta 2? %d \n", resultado);
 
-   resultado = pib1 > pib2;
-   printf("PIB da carta 1 é maior que a carta 2? %d \n", resultado);
+   if (populacao1 > populacao2)
+   {
+    printf("\n____Comparação entre as cartas: População____\n");
+    printf("Carta 1: %u habitantes \n Carta 2: %u habitantes \n", populacao1, populacao2);
+    printf("Carta 1 tem mais população que a carta 2\n");
+   }
+   else if (populacao2 > populacao1)
+   {
+    printf("\n____Comparação entre as cartas: População____\n");
+    printf("Carta 1: %u habitantes \n Carta 2: %u habitantes \n", populacao1, populacao2);
+    printf("Carta 2 tem mais população que a carta 1\n");
+   }
+   else
+   {
+    printf("\n____Comparação entre as cartas: População____\n");
+    printf("Carta 1: %u habitantes \n Carta 2: %u habitantes \n", populacao1, populacao2);
+    printf("As cartas tem a mesma população\n");
+   }
+   
+   Sleep(1500); // delay de 1.5 segundos para exibir a proxima comparação
 
-   resultado = QuantPontosTuristicos1 > QuantPontosTuristicos2; 
-   printf("Quantidade de pontos turisticos da carta 1 é maior que a carta 2? %d \n", resultado);
+   if(area1 > area2)
+   {
+    printf("\n____Comparação entre as cartas: Área____\n");
+    printf("Carta 1: %.2f km² \n Carta 2: %.2f km² \n", area1, area2);
+    printf("Carta 1 tem mais área que a carta 2 \n");
+   }
+   else if(area1 < area2)
+   {
+    printf("\n____Comparação entre as cartas: Área____\n");
+    printf("Carta 1: %.2f km² \n Carta 2: %.2f km² \n", area1, area2);
+    printf("Carta 2 tem mais área que a carta 1 \n");
+   }
+   else
+   { 
+    printf("\n____Comparação entre as cartas: Área____\n");
+    printf("Carta 1: %.2f km² \n Carta 2: %.2f km² \n", area1, area2);
+    printf("As cartas tem a mesma área \n");
+   }
 
-   resultado = DensidadePopulacional1 < DensidadePopulacional2;
-    printf("Densidade populacional da carta 1 é menor que a carta 2? %d \n", resultado);
+    Sleep(1500); // delay de 1.5 segundos para exibir a proxima comparação
 
-    resultado = PIBperCapita1 > PIBperCapita2;
-    printf("PIB per capita da carta 1 é maior que a carta 2? %d \n", resultado);
+   if (pib1 > pib2)
+   {
+    printf("\n____Comparação entre as cartas: PIB____\n");
+    printf("Carta 1: %.2f bilhoes de reais \n Carta 2: %.2f bilhoes de reais \n", pib1 / 1000000000, pib2 / 1000000000);
+    printf("Carta 1 tem mais PIB que a carta 2 \n");
+   }
+   else if (pib1 < pib2)
+   {
+    printf("\n____Comparação entre as cartas: PIB____\n");
+    printf("Carta 1: %.2f bilhoes de reais \n Carta 2: %.2f bilhoes de reais \n", pib1 / 1000000000, pib2 / 1000000000);
+    printf("Carta 2 tem mais PIB que a carta 1 \n");
+   }
+   else
+   {
+    printf("\n____Comparação entre as cartas: PIB____\n");
+    printf("Carta 1: %.2f bilhoes de reais \n Carta 2: %.2f bilhoes de reais \n", pib1 / 1000000000, pib2 / 1000000000);
+    printf("As cartas tem o mesmo PIB \n");
+   }
 
-    resultado = SuperPoder1 > SuperPoder2;
-    printf("Super poder da carta 1 é maior que a carta 2? %d \n", resultado);
+    Sleep(1500); // delay de 1.5 segundos para exibir a proxima comparação
+   
+
+   if (QuantPontosTuristicos1 > QuantPontosTuristicos2)
+   {
+    printf("\n____Comparação entre as cartas: Quantidade de pontos turisticos____\n");
+    printf("Carta 1: %d pontos turisticos \n Carta 2: %d pontos turisticos \n", QuantPontosTuristicos1, QuantPontosTuristicos2);
+    printf("Carta 1 tem mais pontos turisticos que a carta 2 \n");
+   }
+   else if (QuantPontosTuristicos1 < QuantPontosTuristicos2)
+   {
+    printf("\n____Comparação entre as cartas: Quantidade de pontos turisticos____\n");
+    printf("Carta 1: %d pontos turisticos \n Carta 2: %d pontos turisticos \n", QuantPontosTuristicos1, QuantPontosTuristicos2);
+    printf("Carta 2 tem mais pontos turisticos que a carta 1 \n");
+   }
+   else
+   {
+    printf("\n____Comparação entre as cartas: Quantidade de pontos turisticos____\n");
+    printf("Carta 1: %d pontos turisticos \n Carta 2: %d pontos turisticos \n", QuantPontosTuristicos1, QuantPontosTuristicos2);
+    printf("As cartas tem a mesma quantidade de pontos turisticos \n");
+   }
+
+      Sleep(1500); // delay de 1.5 segundos para exibir a proxima comparação
+
+   if (DensidadePopulacional1 < DensidadePopulacional2)
+   {
+    printf("\n____Comparação entre as cartas: Densidade populacional____\n");
+    printf("Carta 1: %.2f Hab/km² \n Carta 2: %.2f Hab/km² \n", DensidadePopulacional1, DensidadePopulacional2);
+    printf("Carta 1 tem menor densidade populacional que a carta 2 \n");
+   }
+   else if (DensidadePopulacional1 > DensidadePopulacional2)
+   {
+    printf("\n____Comparação entre as cartas: Densidade populacional____\n");
+    printf("Carta 1: %.2f Hab/km² \n Carta 2: %.2f Hab/km² \n", DensidadePopulacional1, DensidadePopulacional2);
+    printf("Carta 2 tem menor densidade populacional que a carta 1 \n");
+   }
+   else
+   {
+    printf("\n____Comparação entre as cartas: Densidade populacional____\n");
+    printf("Carta 1: %.2f Hab/km² \n Carta 2: %.2f Hab/km² \n", DensidadePopulacional1, DensidadePopulacional2);
+    printf("As cartas tem a mesma densidade populacional \n");
+   }
+   
+    Sleep(1500); // delay de 1.5 segundos para exibir a proxima comparação
+
+   if (PIBperCapita1 > PIBperCapita2)
+   {
+    printf("\n____Comparação entre as cartas: PIB per capita____\n");
+    printf("Carta 1: %.2f reais \n Carta 2: %.2f reais \n", PIBperCapita1, PIBperCapita2);
+    printf("Carta 1 tem mais PIB per capita que a carta 2 \n");
+   }
+   else if (PIBperCapita1 < PIBperCapita2)
+   {
+    printf("\n____Comparação entre as cartas: PIB per capita____\n");
+    printf("Carta 1: %.2f reais \n Carta 2: %.2f reais \n", PIBperCapita1, PIBperCapita2);
+    printf("Carta 2 tem mais PIB per capita que a carta 1 \n");
+   }
+   else
+   {
+    printf("\n____Comparação entre as cartas: PIB per capita____\n");
+    printf("Carta 1: %.2f reais \n Carta 2: %.2f reais \n", PIBperCapita1, PIBperCapita2);
+    printf("As cartas tem o mesmo PIB per capita \n");
+   }
+   
+    Sleep(1500); // delay de 1.5 segundos para exibir a proxima comparação
+
+   if (SuperPoder1 > SuperPoder2)
+   {
+    printf("\n____Comparação entre as cartas: Super poder____\n");
+    printf("Carta 1: %.2f \n Carta 2: %.2f \n", SuperPoder1, SuperPoder2);
+    printf("Carta 1 tem mais super poder que a carta 2 \n");
+   }
+   else if (SuperPoder1 < SuperPoder2)
+   {
+    printf("\n____Comparação entre as cartas: Super poder____\n");
+    printf("Carta 1: %.2f \n Carta 2: %.2f \n", SuperPoder1, SuperPoder2);
+    printf("Carta 2 tem mais super poder que a carta 1 \n");
+   }
+   else
+   {
+    printf("\n____Comparação entre as cartas: Super poder____\n");
+    printf("Carta 1: %.2f \n Carta 2: %.2f \n", SuperPoder1, SuperPoder2); 
+    printf("As cartas tem o mesmo super poder \n");
+   }
+   
 
 
 
